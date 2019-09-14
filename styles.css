@@ -1,0 +1,58 @@
+body {
+    background: lightslategray;
+}
+
+header {
+    height: 100px;
+    width: auto;
+    background: lightgreen;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 10px 0;
+}
+
+.info {
+    background-color: green;
+    width: 0 auto;
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+
+.amz {
+    background-color: lightcoral;
+    width: 825px;
+    height: 550px;
+    float: right;
+}
+
+.amz:hover {
+    background-color: orange;
+    width: 825px;
+    height: 550px;
+    float: right;
+}
+
+.ebay {
+    background-color: lightsalmon;
+    width: 825px;
+    height: 550px;
+}
+
+.ebay:hover {
+    background-color: blue;
+    width: 825px;
+    height: 550px;
+}
+
+footer {
+    height: 130px;
+    width: 0 auto;
+    background-color: blueviolet;
+}
+
+h2 {
+    margin: 0;
+}
