@@ -14,7 +14,7 @@ main {
 }
 
 .info {
-    background-color: red;
+    background-color: green;
     width: 0 auto;
     height: 100px;
     margin-bottom: 10px;
@@ -22,7 +22,7 @@ main {
 }
 
 .amz {
-    background-color: lightgreen;
+    background-color: lightgoldenrodyellow;
     width: 825px;
     height: 550px;
     float: right;
@@ -48,7 +48,7 @@ main {
 }
 
 footer {
-    height: 130px;
+    height: 131px;
     width: 0 auto;
     background-color: blueviolet;
 }
