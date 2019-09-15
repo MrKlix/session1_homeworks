@@ -14,7 +14,7 @@ main {
 }
 
 .info {
-    background-color: green;
+    background-color: red;
     width: 0 auto;
     height: 100px;
     margin-bottom: 10px;
@@ -22,14 +22,14 @@ main {
 }
 
 .amz {
-    background-color: lightcoral;
+    background-color: lightgreen;
     width: 825px;
     height: 550px;
     float: right;
 }
 
 .amz:hover {
-    background-color: orange;
+    background-color: lightcoral;
     width: 825px;
     height: 550px;
     float: right;
