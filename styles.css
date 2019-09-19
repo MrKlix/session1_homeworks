@@ -1,3 +1,8 @@
+body {
+    background-color: #F89775;
+}
+
+
 @font-face {
   font-family: 'Sigmar One';
   font-style: normal;
@@ -9,6 +14,63 @@
        url('fonts/sigmar-one-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('fonts/sigmar-one-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/sigmar-one-v10-latin-regular.svg#SigmarOne') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/roboto-v20-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('fonts/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('fonts/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/roboto-v20-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('fonts/roboto-v20-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5)!important;
 }
 
 .fa-crown {
@@ -53,13 +115,6 @@
   }
 }
 
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-}
-
 .brandname {
     font-family: 'Sigmar One', sans-serif;
     text-transform: uppercase;
@@ -74,36 +129,79 @@
     background: -webkit-linear-gradient(#eee, #F4D03F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
-     transition: font-size 1s;
+    -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+     transition: font-size 0.5s;
 }
 
 .nav-home:hover {
     background: -webkit-linear-gradient(#F4D03F, #eee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-about-us:hover {
     background: -webkit-linear-gradient(#F4D03F, #eee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-impressum:hover {
     background: -webkit-linear-gradient(#F4D03F, #eee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-datenschutz:hover {
     background: -webkit-linear-gradient(#F4D03F, #eee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto-Bold', sans-serif;
+    background-color: rgba(246, 123, 133, 1);
+}
+
+.heading {
+    text-shadow: black 0px 0px 1px;
+}
+
+.king {
+    font-family: 'Sigmar One', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #F4D03F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(-3deg);
+    display: inline-block;
+}
+
+.btn {
+    background-color: #1DB954;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #1ED760;
+}
+
+.money {
+    background-color: rgba(249, 168, 105, 1);
+}
+
+.fa-euro-sign {
+    font-size: 4rem;
+    color: #1DB954;
 }
 
 
@@ -115,3 +213,22 @@
 .custom-toggler.navbar-toggler {
   border-color: #F4D03F;
 }
+
+@media (max-width: 575.98px) {
+
+    .fa-crown {
+    font-size: 2rem;
+    padding-right: 0.4rem;
+    }
+
+    .brandname {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.1rem;
+    }
+}
+
+
+
