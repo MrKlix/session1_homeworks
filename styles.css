@@ -1,5 +1,6 @@
 body {
-    background-color: #F89775;
+    height: 100%;
+    background-image: radial-gradient(circle, #eee, #F8CA40, #F89775);
 }
 
 
@@ -161,10 +162,20 @@ body {
     font-size: 1.2rem;
 }
 
-.jumbotron {
-    background-color: rgba(0, 0, 0, 0.9);
+.main-content {
+    padding: 4rem;
+    margin-top: 3rem;
+    height: 30rem;;
     font-family: 'Roboto-Bold', sans-serif;
-    background-color: rgba(246, 123, 133, 1);
+    background-color: rgba(246, 123, 133, 0.8);
+}
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    margin: 0rem;
+
 }
 
 .heading {
@@ -182,6 +193,7 @@ body {
 }
 
 .btn {
+    margin-top: 7rem;
     background-color: #1DB954;
     font-size: 14px;
     line-height: 1;
@@ -203,7 +215,6 @@ body {
     font-size: 4rem;
     color: #1DB954;
 }
-
 
 /*Bootstrap Custom Toggler*/
 .custom-toggler .navbar-toggler-icon {
