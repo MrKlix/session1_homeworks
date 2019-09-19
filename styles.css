@@ -1,8 +1,6 @@
 body {
-    height: 100%;
     background-image: radial-gradient(circle, #eee, #F8CA40, #F89775);
 }
-
 
 @font-face {
   font-family: 'Sigmar One';
@@ -164,18 +162,72 @@ body {
 
 .main-content {
     padding: 4rem;
-    margin-top: 3rem;
-    height: 30rem;;
+    margin: 3rem 0 3rem 0;
+    height: 35rem;
     font-family: 'Roboto-Bold', sans-serif;
     background-color: rgba(246, 123, 133, 0.8);
 }
 
 
 footer {
-    width: 100%;
+    height: 12rem;
     background-color: black;
-    margin: 0rem;
+}
 
+.footer-heading {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.footer-ul >  a {
+    text-decoration: none;
+}
+
+li:hover {
+    color: #1CB954;
+}
+
+.footer-ul {
+    padding: 0;
+}
+
+.footer-li {
+    color: white;
+    list-style: none;
+    padding: 0.3rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.my-col-2 {
+    height: 12rem;
+    color: white;
+}
+.my-col-3 {
+    height: 12rem;
+}
+
+.my-fa {
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+}
+
+.fa-facebook-square:hover {
+    color: #4266B2;
+}
+
+.fa-instagram:hover {
+    color: #B12F9B;
+}
+
+.fa-twitter-square:hover {
+    color: #29AAE1;
 }
 
 .heading {
@@ -192,8 +244,13 @@ footer {
     display: inline-block;
 }
 
+.my-button {
+        margin-top: 8rem;
+}
+
 .btn {
-    margin-top: 7rem;
+    display: block;
+    margin: 0 auto;
     background-color: #1DB954;
     font-size: 14px;
     line-height: 1;
@@ -205,15 +262,6 @@ footer {
 
 .btn:hover {
     background-color: #1ED760;
-}
-
-.money {
-    background-color: rgba(249, 168, 105, 1);
-}
-
-.fa-euro-sign {
-    font-size: 4rem;
-    color: #1DB954;
 }
 
 /*Bootstrap Custom Toggler*/
@@ -240,6 +288,4 @@ footer {
         padding: 0.1rem;
     }
 }
-
-
 
