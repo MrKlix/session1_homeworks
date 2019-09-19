@@ -1,58 +1,117 @@
-body {
-    background: lightslategray;
+@font-face {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/sigmar-one-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Sigmar One Regular'), local('SigmarOne-Regular'),
+       url('fonts/sigmar-one-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/sigmar-one-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/sigmar-one-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/sigmar-one-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/sigmar-one-v10-latin-regular.svg#SigmarOne') format('svg'); /* Legacy iOS */
 }
 
-header {
-    height: 100px;
-    width: auto;
-    background: lightgreen;
-    margin-bottom: 10px;
+.fa-crown {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#eee, #F4D03F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: bounce;
+    animation-duration: 1s;
 }
 
-main {
-    margin: 10px 0;
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
 }
 
-.info {
-    background-color: green;
-    width: 0 auto;
-    height: 100px;
-    margin-bottom: 10px;
-
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
-.amz {
-    background-color: lightgoldenrodyellow;
-    width: 825px;
-    height: 550px;
-    float: right;
+.brandname {
+    font-family: 'Sigmar One', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #F4D03F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.amz:hover {
-    background-color: lightcoral;
-    width: 825px;
-    height: 550px;
-    float: right;
+.nav-text {
+    font-family: 'Sigmar One', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #F4D03F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
+     transition: font-size 1s;
 }
 
-.ebay {
-    background-color: lightsalmon;
-    width: 825px;
-    height: 550px;
+.nav-home:hover {
+    background: -webkit-linear-gradient(#F4D03F, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
 
-.ebay:hover {
-    background-color: blue;
-    width: 825px;
-    height: 550px;
+.nav-about-us:hover {
+    background: -webkit-linear-gradient(#F4D03F, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
 
-footer {
-    height: 131px;
-    width: 0 auto;
-    background-color: blueviolet;
+.nav-impressum:hover {
+    background: -webkit-linear-gradient(#F4D03F, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
 
-h2 {
-    margin: 0;
+.nav-datenschutz:hover {
+    background: -webkit-linear-gradient(#F4D03F, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+/*Bootstrap Custom Toggler*/
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 238, 238, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #F4D03F;
 }
