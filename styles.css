@@ -168,7 +168,6 @@ body {
     background-color: rgba(246, 123, 133, 0.8);
 }
 
-
 footer {
     height: 12rem;
     background-color: black;
@@ -183,7 +182,11 @@ footer {
     text-transform: uppercase;
 }
 
-.footer-ul >  a {
+.my-button a {
+    text-decoration: none;
+}
+
+.footer-ul a {
     text-decoration: none;
 }
 
