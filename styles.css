@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     background-image: radial-gradient(circle, #eee, #F8CA40, #F89775);
 }
 
@@ -77,41 +78,6 @@ body {
     background: -webkit-linear-gradient(#eee, #F4D03F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-name: bounce;
-    animation-duration: 1s;
-}
-
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
 }
 
 .brandname {
@@ -276,11 +242,10 @@ li:hover {
   border-color: #F4D03F;
 }
 
-@media (max-width: 575.98px) {
-
+@media (max-width: 600px) {
     .fa-crown {
-    font-size: 2rem;
-    padding-right: 0.4rem;
+        font-size: 2rem;
+        padding-right: 0.4rem;
     }
 
     .brandname {
@@ -290,5 +255,78 @@ li:hover {
     .navbar-toggler {
         padding: 0.1rem;
     }
+
+    .display-4 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 2rem 0 2rem 0;
+        height: 27rem;
+    }
+
+    .my-button {
+        margin-top: 2rem;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+
+    .footer-heading {
+        padding-top: 1rem;
+    }
+
+    .my-col-3 {
+        padding-top: 0;
+        height: 4rem;
+    }
+
+    .btn {
+        margin-top: 3rem;
+    }
+
+    .social-media {
+        height: 3rem;
+    }
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+    .navbar {
+        height: 8rem;
+    }
+
+    .fa-crown {
+        font-size: 5rem;
+        padding-right: 0.4rem;
+    }
+
+    .brandname {
+        font-size: 2rem;
+    }
+
+    .navbar-toggler {
+        padding: 1.5rem;
+    }
+
+    .main-content {
+        height: 40rem;
+        text-align: center;
+    }
+
+    .king {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+}
